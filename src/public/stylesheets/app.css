@@ -1,0 +1,206 @@
+
+.sidebar{
+    background-color:  rgba(14,15,18,1);
+    padding: 2px;
+    border-right: none;
+}
+.version{
+    float: right;
+    margin-right: 5px;
+    font-size: 10px;
+    color: rgba(130, 130, 130, 0.5);
+}
+.nav-group-item.active, .nav-group-item:active {
+    background-color: #646870;
+    border-left: thick solid #00ff00;
+}
+
+.nav-group-item {
+    color: #CACACB;
+}
+.centered{
+    text-align: center;
+    margin: 0 auto;
+}
+
+/*
+ * @NOTE: Prepend a `~` to css file paths that are in your node_modules
+ *        See https://github.com/webpack-contrib/sass-loader#imports
+ */
+ @import "~@fortawesome/fontawesome-free/css/all.css";
+
+ .parent {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+  }
+  .parent > div {
+    flex: 1;
+}
+.pane {
+   
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-content: center;
+    align-items:center;
+    height: 100%;
+   position: relative;
+   color: white;
+   height: 100vh;
+   background-color: #232c39;
+   background-image: linear-gradient(45deg, rgba(0, 216, 255, 0.5) 10%, rgba(0, 1, 127, 0.7));
+   font-family: Arial, Helvetica, Helvetica Neue, serif;
+   overflow-y: hidden;
+   border-left: none;
+   margin: auto;
+ }
+
+ .stepper-pane{
+    width: 50%;
+    min-width: 300px;
+    max-width: 600px;
+ }
+ h2 {
+   margin: 0;
+   font-size: 2.25rem;
+   font-weight: bold;
+   letter-spacing: -0.025em;
+   color: #fff;
+ }
+ 
+ p {
+   font-size: 24px;
+ }
+ 
+ li {
+   list-style: none;
+ }
+ 
+ a {
+   color: white;
+   opacity: 0.75;
+   text-decoration: none;
+ }
+ 
+ a:hover {
+   opacity: 1;
+   text-decoration: none;
+   cursor: pointer;
+ }
+ 
+ .form-control {
+     color: black;
+ }
+ label{
+     font-weight: 700
+ }
+
+ .form-full{
+   width: 100%;
+ }
+ .form-jig-preview{
+   width: 20%;
+ }
+ .form-preview{
+   width: 100%;
+ }
+
+input[type=button]:disabled{
+     background-color: #646870 !important;
+     background-image: none;
+     pointer-events: none;
+ }
+ input[type=text]:disabled{
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    background-image: none;
+    pointer-events: none;
+}
+.flex-input{
+    display: flex;
+    flex-direction: row;
+}
+.form-fit{
+    width: 65%;
+    min-width: 300px;
+    margin: auto;
+}
+
+.alert {
+	font-weight: 700;
+	letter-spacing: 5px;
+  }
+
+  .message {
+	width: 100%;
+	text-align: center;
+  }
+  
+
+
+  
+
+  .error-modal {
+    min-width: 400px;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 4px 8px 12px 0 rgba(0, 0, 0, 0.4);
+    text-align: center;
+    overflow: hidden;
+    -webkit-animation: show-modal .7s ease-in-out;
+            animation: show-modal .7s ease-in-out;
+  }
+  .error-modal.hide {
+    -webkit-animation: hide-modal .6s ease-in-out both;
+            animation: hide-modal .6s ease-in-out both;
+  }
+  .error-modal img {
+    margin-top: 24px;
+  }
+  .error-modal .error-title {
+    display: block;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 14px 0 5px 0;
+  }
+  .error-modal p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 19px;
+    margin: 0;
+    padding: 0 30px;
+  }
+  .error-modal .error-button {
+    margin-top:3px;
+    height: 40px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(236, 103, 103);
+    color: #fff;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background .3s ease-in-out;
+  }
+  .error-modal .accept-button {
+    height: 40px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(73, 67, 255);
+    color: #fff;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background .3s ease-in-out;
+  }
+  .error-modal .error-button:hover {
+    background: #EC3434;
+  }
+  .error-modal .accept-button:hover {
+    background: rgb(14, 58, 217);
+  }

@@ -1,0 +1,6 @@
+node_modules
+/dist
+installer-build
+installers
+release
+./src/dist/bundle

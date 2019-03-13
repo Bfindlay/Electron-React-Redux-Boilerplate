@@ -1,0 +1,55 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: -apple-system, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+header {
+	position: absolute;
+	width: 500px;
+	height: 250px;
+	top: 50%;
+	left: 50%;
+	margin-top: -125px;
+	margin-left: -250px;
+	text-align: center;
+}
+
+.settings-form{
+	width: 50%;
+    min-width: 300px;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+header h1 {
+	font-size: 60px;
+	font-weight: 100;
+	margin: 0;
+	padding: 0;
+}
+
+.disabled {
+	pointer-events: none;
+	/* Disables the button completely. Better than just cursor: default; */
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+	opacity: 0.7;
+  }
+
+
+
+  
+.alert {
+	font-weight: 700;
+	letter-spacing: 5px;
+  }
+
+  .message {
+	width: 100%;
+	text-align: center;
+  }
+  
